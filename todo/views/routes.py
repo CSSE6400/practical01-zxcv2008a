@@ -9,7 +9,7 @@ def health():
     return jsonify({"status": "ok"})
 
 
-@ api.route('/todo', methods=['POST'])
+@ api.route('/todos', methods=['POST'])
 def create_todo():
     return jsonify({
         "id": 1,
@@ -22,7 +22,7 @@ def create_todo():
     })
 
 
-@ api.route('/todo/<int:id>', methods=['GET'])
+@ api.route('/todos/<int:id>', methods=['GET'])
 def get_todo(id):
     return jsonify({
         "id": id,
@@ -35,7 +35,7 @@ def get_todo(id):
     })
 
 
-@ api.route('/todo/1', methods=['PUT'])
+@ api.route('/todos/1', methods=['PUT'])
 def update_todo():
     return jsonify({
         "id": 1,
@@ -48,7 +48,7 @@ def update_todo():
     })
 
 
-@ api.route('/todo/1', methods=['DELETE'])
+@ api.route('/todos/1', methods=['DELETE'])
 def delete_todo():
     return jsonify({
         "id": 1,
