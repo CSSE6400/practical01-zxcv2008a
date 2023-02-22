@@ -19,7 +19,7 @@ def health():
 
 
 @ api.route('/todos', methods=['GET'])
-def get_todo():
+def get_all_todo():
     return jsonify([TEST_TODO])
 
 
