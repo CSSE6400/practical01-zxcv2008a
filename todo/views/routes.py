@@ -25,7 +25,7 @@ def get_all_todo():
 
 @ api.route('/todos', methods=['POST'])
 def create_todo():
-    return jsonify(TEST_TODO)
+    return jsonify(TEST_TODO), 201
 
 
 @ api.route('/todos/<int:id>', methods=['GET'])
